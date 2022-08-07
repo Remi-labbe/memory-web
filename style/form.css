@@ -1,0 +1,100 @@
+
+#form {
+    box-sizing: border-box;
+    background: #F2F2F2;
+    padding: 10px 20px 10px 10px;
+    margin: 50px auto;
+    width: 70%;
+    border-radius: 5px;
+
+}
+
+form > p {
+    color: black;
+    text-transform: uppercase;
+    font-size: large;
+    text-align: center;
+    margin: 20px 50px;
+    padding: 2px 5px;
+}
+
+.go_insc, .go_connect {
+    color: black;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    font-style: italic;
+}
+
+.go_insc a:visited, .go_connect a:visited  {
+    color: orangered;
+}
+
+
+.legend {
+    float: left;
+    width: 40%;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+label {
+    padding: 5px 5px 5px 0;
+    display: inline-block;
+}
+
+.input_zone {
+    float: left;
+    width: 60%;
+    margin-top: 5px;
+}
+
+input[type=submit] {
+    width: initial;
+    padding: 10px 9px;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #4682B4;
+    color: white;
+}
+
+#form input[type=submit] {
+    margin-top: 3px;
+}
+
+input[type=submit]:hover {
+    background: #3E7AAC;
+    box-shadow: 0 4px 8px 0 lightgray, 0 6px 20px 0 lightgray;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+#form textarea {
+    resize: vertical;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 928px) {
+    .legend, .input_zone, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 928px) {
+    #form {
+        width: 430px;
+    }
+}

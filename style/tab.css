@@ -1,0 +1,50 @@
+    /****************/
+    /*              */
+    /* CCS TABLEAUX */
+    /*              */
+    /****************/
+
+caption {
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 2em;
+    margin-bottom: 1em;
+    padding: 2em 1em;
+    background-color: #E6F2FF;
+}
+
+.sorter {
+  cursor: pointer;
+}
+
+table th, td {
+    border: black 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+table {
+    margin-top: 20px;
+    border: black 2px solid;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+tfoot {
+    background-color: lightskyblue;
+}
+
+    /* modification de la mise en page en fonction de la taille de la fenetre */
+
+@media screen and (max-width: 1225px) {
+    body {
+        width: 796px;
+    }
+}

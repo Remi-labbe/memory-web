@@ -1,0 +1,184 @@
+/**************/
+/*            */
+/* CCS GLOBAL */
+/*            */
+/**************/
+
+/* Police generale */
+
+@font-face {
+    font-family: Afta;
+    src: url(AftaSansThin-Regular.otf);
+}
+
+* {
+    font-family: Afta, Arial, Serif;
+}
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/* separateur ligne */
+
+hr {
+    margin-bottom: 30px;
+}
+/* Aspect page entiere  */
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    background-color: white;
+    padding: 2% 2% 1%;
+    border-radius: 5px;
+}
+
+html {
+    background-color: #E6ECF0;
+}
+
+/* gestion de la barre de navigation */
+
+#headerimg {
+  height: 49px;
+  width: 49px;
+  float: left;
+  margin-right: 10px;
+}
+
+.menu_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #333;
+  border-radius: 4px;
+}
+
+.menu_list li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu .top_menu a:hover {
+  background: #111;
+  box-shadow: 0 4px 8px 0 #444, 0 6px 20px 0 #444;
+}
+
+.active {
+  background: steelblue;
+}
+
+.top_menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .top_menu {
+      width: 100%;
+      margin-top: 0;
+  }
+}
+
+#remarque {
+    color: red;
+    font-style: italic;
+}
+
+/* gestion du footer */
+
+footer {
+    margin-top: 50px;
+}
+
+.social_img {
+    height: 17px;
+    width: 17px;
+}
+
+.foot_menu a:hover {
+    background: #111;
+}
+
+#copyrights {
+    padding: 14px 16px;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .foot_menu {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+    /* Header de la page */
+
+#header_logo {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+    /* Menu deroulant */
+
+#dropbutton {
+    cursor: default;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+}
+
+#dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 3px;
+}
+
+#dropdown_content a, #dropdown_content span, #dropdown_content button {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+}
+
+#dropdown_content span {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#dropdown_content a:hover {
+    background-color: #111;
+    box-shadow: 0 4px 8px 0 #444, 0 6px 20px 0 #444;
+}
+
+#dropdown_menu:hover #dropdown_content {
+    display: block;
+    box-shadow: 0 4px 8px 0 #444, 0 6px 15px 0 #444;
+}

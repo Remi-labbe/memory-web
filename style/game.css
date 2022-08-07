@@ -1,0 +1,44 @@
+.card {
+    width: 70px;
+    margin: 2px 3px 2px 3px
+}
+
+/* Menu du jeu */
+
+.gamebtn{
+  padding: 10px 9px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: #444;
+  color: white;
+  margin-top: 3px;
+}
+
+.gamebtn:hover{
+  background: #222;
+}
+
+#ngmenu, #infobox {
+  box-sizing: border-box;
+  background: #F2F2F2;
+  padding: 10px 20px 10px 10px;
+  margin: 20px auto 40px 20px;
+  width: 25%;
+  border-radius: 5px;
+  border: solid #333 1px;
+}
+
+#memory_board{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}
+
+#win {
+  font-weight: bold;
+  float: right;
+  margin-right: 30px;
+  padding: auto auto;
+}
